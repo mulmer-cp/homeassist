@@ -1,0 +1,6 @@
+homeassistant:
+  name: TheIceBox
+  latitude: 90.0000
+  longitude: 135.0000
+  unit_system: imperial
+  time_zone: America/Anchorage
