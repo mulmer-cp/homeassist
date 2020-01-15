@@ -1,0 +1,16 @@
+default_config:
+
+# Text to speech
+tts:
+  - platform: google_translate
+
+# Integrations
+tplink:
+  discovery: false
+  light:
+    - host: 192.168.0.45
+  android_ip_webcam:
+    - host: 192.168.0.228
+
+logger:
+  default: info
