@@ -4,3 +4,10 @@ homeassistant:
   longitude: 135.0000
   unit_system: imperial
   time_zone: America/Anchorage
+  # Text to speech
+  tts:
+    - platform: google_translate# Integrations
+
+  automation: !include automations.yaml
+  script: !include scripts.yaml
+  scene: !include scenes.yaml
