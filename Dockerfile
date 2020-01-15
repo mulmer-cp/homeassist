@@ -1,9 +1,4 @@
-FROM arm32v7/alpine
+FROM arm32v7/alpine:latest
 RUN mkdir /ha_data
-RUN echo "homeassistant:
-  name: TheIceBox
-  latitude: 90.0000
-  longitude: 135.0000
-  unit_system: imperial
-  time_zone: America/Anchorage" > /ha_data/configuration.yaml
+RUN echo "homeassistant:\n  name: TheIceBox\n  latitude: 90.0000\n  longitude: 135.0000\n  unit_system: imperial\n  time_zone: America/Anchorage\n" > /ha_data/configuration.yaml
 VOLUME /ha_data
